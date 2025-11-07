@@ -103,7 +103,7 @@ yoga-pose-classifier/
 
 ---
 
-## 🔍 Notes on Reproducibility
+## Notes on Reproducibility
 
 - Seed all random generators (`numpy`, `torch`, `random`) in `train.py`.
 - Log experiments with `tensorboard` or `weights & biases` for traceability.
