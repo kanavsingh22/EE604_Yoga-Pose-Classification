@@ -78,23 +78,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. **Prepare data**
-- Put images in `data/` following the instructions in `src/dataset.py`.
-- Run preprocessing (extract Mediapipe keypoints) with:
-```bash
-python src/extract_keypoints.py --input_dir data/images --output data/keypoints.npy
-```
-
-5. **Train**
-```bash
-python src/train.py --config configs/default.yaml
-```
-
-6. **Predict**
-```bash
-python src/predict.py --model models/best.pth --image examples/tree_pose.jpg
-```
-
 ---
 
 ## Results
@@ -115,8 +98,7 @@ yoga-pose-classifier/
 ├── src/
 │   └── main.ipynb
 ├── requirements.txt
-├── README.md
-└── yoga_report.tex
+└── README.md
 ```
 
 ---
@@ -132,7 +114,7 @@ yoga-pose-classifier/
 ## References
 
 - Mediapipe Pose: https://developers.google.com/mediapipe/solutions/vision/pose  
-- Yoga-82 Dataset: https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset  
+- Yoga-82 Dataset: [https://www.kaggle.com/datasets/niharika41298/yoga-poses-dataset](https://www.kaggle.com/datasets/shrutisaxena/yoga-pose-image-classification-dataset)  
 - PyTorch: https://pytorch.org/  
 - scikit-learn: https://scikit-learn.org/
 
